@@ -13,7 +13,6 @@
 <LI>Localapp.py - forecasting model based onlocal approximation invented by prof. Yuriy Loskutov </LI>
 <LI>NeurosV.py - predicting recurrent neural network with LSTM sells</LI>
 <LI>Spectrum.py - forecasting model of singular spectrum analysis </LI>
-<LI>Tests.py - causality tests</LI>
 <LI>Util.py - some useful things </LI>
 </p>
 <B>RealWeekly</B> - the folder with 34 real-world time series for a 10-year period of weekly frequency from open sources.</p>
