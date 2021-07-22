@@ -15,7 +15,7 @@ import pandas as pd
 from Libraries.Util import Metr
 from Libraries.features import CEmbDim
 def ChooChoo(dat, prds, fwd, a0=True):
-    m=2*СEmbDim(dat)+1
+    m=2*CEmbDim(dat)+1
     z0=dat[-m:]
     dz0=np.std(z0)
     l, k = 0, 0
@@ -30,7 +30,7 @@ def ChooChoo(dat, prds, fwd, a0=True):
         predictor=pd.read_csv('Data_predictors-II/'+j['prd'], sep=',')
         x=predictor[predictor.columns[1]].values[:-j['lag']]
         zk=np.concatenate((zk,x[-m:].reshape(m,1)),axis=1)
-        m1=2*СEmbDim(x)+1
+        m1=2*CEmbDim(x)+1
         xhat.append(ChooChoo(x, [], m1, fwd, a0=a0))
     if a0: 
         zk=np.concatenate((zk,np.ones((m,1))),axis=1)
