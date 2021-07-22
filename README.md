@@ -1,5 +1,6 @@
 # Timesergraph
 <I>Time series analysis by means of graph network</I> </p>
+<H2>Content</H2>
 <B>Libraries</B> - the folder that contains procedures for time series forecasting, graph construction and some other useful deeds. All of the forecasting procedures are unified for input and output parameters. </p>
 <p>
 <LI>Autoregr.py - autoregressive predicting model with research tool that helps to test the model on different parts of a series. (The same function is available for the other forecasting models)</LI>
