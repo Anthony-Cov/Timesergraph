@@ -64,8 +64,8 @@ def MLS(x,y):
 возвращает ряд без тренда и коэффициенты тренда Ax+b отдельно'''
 def RemTrend(y):
     warnings.filterwarnings('ignore')
-    mssa = MSSA(n_components=10, #'variance_threshold',
-            variance_explained_threshold=0.98,#,'svht',
+    mssa = MSSA(n_components=8, #'variance_threshold',
+            #variance_explained_threshold=0.98,#,'svht',
             window_size=None,
             verbose=False)
     x=pd.DataFrame()
