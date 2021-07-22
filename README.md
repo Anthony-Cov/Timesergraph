@@ -5,9 +5,7 @@
 <LI>Autoregr.py - autoregressive predicting model with research tool that helps to test the model on different parts of a series </LI>
 <LI>ChooChoo.py - forecasting model based on maximal likeness invented by Irina Chuchueva </LI>
 <LI>EmbDim.cpp, EmbDim.h, EmbDim.so - computation of embedding dimencion (C++ for Python) </LI>
-<LI>fakeseries.py - initial functions for <I>generator.py</I></LI>
 <LI>features.py - time series features calculation </LI>
-<LI>generator.py - fake series generator that uses neural networl</LI>
 <LI>graph.py - graph construction and manipulation </LI>
 <LI>HurstExp.cpp, HurstExp.h, HurstExp.so - computation of Hurst's exponent (C++ for Python) </LI>
 <LI>Localapp.py - forecasting model based onlocal approximation invented by prof. Yuriy Loskutov </LI>
