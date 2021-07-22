@@ -21,14 +21,11 @@
 <B>ForecastAndFeatures.py</B> - computation of mean MAPE for each of the forecasting models, graph characteristics and series features for each time series in data set.</p>
 <B>Predictab.ipynb</B> - experiments on time series clustering by characteristics of corresponding graph.</p>
 <H2>Requirements and dependences</H2>
-<LI>numpu</LI>
-<LI>pandas</LI>
-<LI>itertools</LI>
-<LI>matplotlib</LI>
-<LI>networkx</LI>
-<LI>scipy</LI>
-<LI>sklearn</LI>
-<LI>keras</LI>
-<LI>xgboost</LI>
-<LI>ctypes (C++ objects (EmbDim.so and HurstExp.so) were compiled with gcc for Windows'10 and wrapped to CEmbDim and CНurst functions in  to be used with Python. C++ sourse codes are available here, besides, there are 'pure' Python functions for the same purposes (DimEmb and HurstTraj) in <I>features.py</I> module) </LI>
+<LI>numpy, pandas, matplotlib as usual</LI>
+<LI>itertools - for artificial time series generator</LI>
+<LI>networkx - for graph construction and its characteristics computation</LI>
+<LI>scipy, sklearn - for time series features computation</LI>
+<LI>keras - forecasting model and classificator</LI>
+<LI>xgboost - for Classifier.ipynb</LI>
+<LI>ctypes (C++ objects (EmbDim.so and HurstExp.so) were compiled with gcc for Windows'10 and wrapped to CEmbDim and CНurst functions to be used with Python. C++ sourse codes are available here, besides, there are 'pure' Python functions for the same purposes (DimEmb and HurstTraj) in <I>features.py</I> module) </LI>
 </p>
