@@ -1,5 +1,6 @@
 # Timesergraph
 <I>Time series analysis by means of graph network</I> </p>
+
 <H2>Content</H2>
 <B>Libraries</B> - the folder that contains procedures for time series forecasting, graph construction and some other useful deeds. All of the forecasting procedures are unified for input and output parameters. </p>
 <p>
@@ -19,3 +20,15 @@
 <B>Classifier.ipynb</B> - experiments with classification models trained on artificial data applied to real-world series.</p>
 <B>ForecastAndFeatures.py</B> - computation of mean MAPE for each of the forecasting models, graph characteristics and series features for each time series in data set.</p>
 <B>Predictab.ipynb</B> - experiments on time series clustering by characteristics of corresponding graph.</p>
+<H2>Requirements and dependences</H2>
+<LI>numpu</LI>
+<LI>pandas</LI>
+<LI>itertools</LI>
+<LI>matplotlib</LI>
+<LI>networkx</LI>
+<LI>scipy</LI>
+<LI>sklearn</LI>
+<LI>keras</LI>
+<LI>xgboost</LI>
+<LI>ctypes (C++ objects (EmbDim.so and HurstExp.so) were compiled with gcc for Windows'10 and wrapped to CEmbDim and CНurst functions in  to be used with Python. C++ sourse codes are available here, besides, there are 'pure' Python functions for the same purposes (DimEmb and HurstTraj) in <I>features.py</I> module) </LI>
+</p>
