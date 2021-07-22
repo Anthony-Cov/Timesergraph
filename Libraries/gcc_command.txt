@@ -1,3 +1,0 @@
-gcc -fPIC -shared -o EmbDim.so EmbDim.cpp -lstdc++
-
-gcc -fPIC -shared -o libtest.so test.c
