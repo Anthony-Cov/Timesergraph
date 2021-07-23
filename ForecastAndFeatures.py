@@ -43,6 +43,7 @@ for i,df in enumerate(datafiles[begin:]): #it may take much time - RNN is not so
     data=pd.read_csv(datadir+'/'+df, sep=',')
     data[data.columns[1]]=pd.to_numeric(data[data.columns[1]], errors='coerce', downcast='float')
     x=data[data.columns[1]].values
+    data.fillna(method='ffill',inplace=True)
     x=np.delete(x, np.where(x=='.')).astype(float)
     l=len(x)
     
