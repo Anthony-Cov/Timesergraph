@@ -15,7 +15,7 @@ from Libraries.Localapp import LAprExplore
 from Libraries.ChooChoo import ChooChooExplore
 from Libraries.NeurosV import LSTMExploreV
 from Libraries.graph import MakeGraph, GraphEntropy
-from Libraries.features import NoiseFactor, CНurst, KSEntr, RandWalk, ShEntr
+from Libraries.features import NoiseFactor, CНurst, KSEntr, RandWalk, CCorrent
 
 warnings.filterwarnings("ignore")
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"   # see issue #152
@@ -93,7 +93,7 @@ for i,df in enumerate(datafiles[begin:]): #it may take much time - RNN is not so
     hurst=CНurst(z)
     ksent=KSEntr(z)
     rndw=RandWalk(z)
-    corrent=ShEntr(z)
+    corrent=CCorrent(z)
     
     '''New row in the table'''
     table=table.append(pd.DataFrame({'Series':[df[:-4]], 'VARmape':[np.mean(mapes1)], 
