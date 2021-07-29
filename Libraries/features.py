@@ -56,7 +56,8 @@ def DimEmb(ser):
             ent=abs(sum(cn)/ent) #9/III-2021 abs(np.log2(sum(cn)/ent))
             break
     return k, dc, ent #k - размерность вложения, dc - корреляционная размерность, ent - оценка энтропии.
-def CEmbDim(dat): #То же по-быстрому с C++ процедурой EmbDim.so
+
+def CEmbDim(dat): #То же по-быстрому с C++ процедурой EmbDim.so'
     nw=1000
     if len(dat)>1000:
         y=dat[-1000:]
@@ -68,6 +69,19 @@ def CEmbDim(dat): #То же по-быстрому с C++ процедурой E
     s=list(Norm01(y)[0])+[0.]*(nw-len(y))
     arr = (ctypes.c_double*nw)(*s)
     return emd.EmbDim(arr, len(y))
+
+def CCorrent(dat): #Корреляционная энтропия по-быстрому с C++ процедурой CorrEntr.cpp
+    nw=1000
+    if len(dat)>1000:
+        y=dat[-1000:]
+    else:
+        y=dat
+    emd = ctypes.CDLL(split(getfile(Libraries.Util))[0]+'/CorrEntr.so')
+    emd.CorrEntr.restype = ctypes.c_double
+    emd.CorrEntr.argtypes = [ctypes.c_double*nw, ctypes.c_int]
+    s=list(Norm01(y)[0])+[0.]*(nw-len(y))
+    arr = (ctypes.c_double*nw)(*s)
+    return emd.CorrEntr(arr, len(y))
 
 
 '''Показатель Хёрста (R/S и H траектории)'''
