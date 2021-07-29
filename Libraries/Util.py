@@ -26,8 +26,8 @@ def Metr(x,y):
 
 '''Линейное укладывание в диапазон [0,1], возвращает коэффициенты для восстановления (max(X))!=0'''
 def Norm01(x):
-    mi=min(x)
-    ma=max(np.array(x)-mi)
+    mi=np.nanmin(x)
+    ma=np.nanmax(np.array(x)-mi)
     x_n=(np.array(x)-mi)/ma
     return x_n, mi, ma
 '''Восстановление'''
