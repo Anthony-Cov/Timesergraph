@@ -27,5 +27,5 @@
 <LI>scipy, sklearn - for time series features computation</LI>
 <LI>keras - forecasting model and classificator</LI>
 <LI>xgboost - for Classifier.ipynb</LI>
-<LI>ctypes (C++ objects (EmbDim.so and HurstExp.so) were compiled with gcc for Windows'10 and wrapped to CEmbDim and CНurst functions to be used with Python. C++ sourse codes are available here, besides, there are 'pure' Python functions for the same purposes (DimEmb and HurstTraj) in <I>features.py</I> module) </LI>
+<LI>ctypes (C++ objects (EmbDim.so, CCorrent.so, and HurstExp.so) were compiled with gcc for Windows'10 and wrapped to CEmbDim and CНurst functions to be used with Python. C++ sourse codes are available here, besides, there are 'pure' Python functions for the same purposes (DimEmb and HurstTraj) in <I>features.py</I> module) </LI>
 </p>
