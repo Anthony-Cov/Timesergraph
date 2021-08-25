@@ -1,5 +1,7 @@
 # Timesergraph
-<I>Time series analysis by means of graph network (compared to series features analysis)</I> </p>
+<I>Time series analysis by means of graph network (compared to series features analysis)</I> For 'Evaluating time series predictability via
+the corresponding transition graph characteristics' on  ICDM 2021.
+</p>
 
 <H2>Content</H2>
 <B>Libraries</B> - the folder that contains procedures for time series forecasting, graph construction and some other useful deeds. All of the forecasting procedures are unified for input and output parameters. </p>
